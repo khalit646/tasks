@@ -14,12 +14,12 @@ function trimNum(str){
     return str
 }
 
-function sub(num1, num2){
+export function sub(num1, num2){
     num2 = num2[0] == '-' ? num2.slice(1) : ('-' + num2)
     return add(num1, num2)
 }
 
-function add(num1, num2){
+export function add(num1, num2){
     let nm1 = num1[0] == '-'
     let nm2 = num2[0] == '-'
 
@@ -194,7 +194,7 @@ function subImpl(c, d){
     return (minus ? '-' : '') + trimNum(s.concat(integRes, '.', fractRes).join(''))
 }
 
-function mul(num1, num2){
+export function mul(num1, num2){
     let minus = false
     if(num1[0] == '-'){
         minus = true
@@ -257,7 +257,7 @@ function mul(num1, num2){
     return (minus? '-' : '') + trimNum(res.join(''))
 }
 
-function div(num1, num2){
+export function div(num1, num2){
 
     let minus = false
     if(num1[0] == '-'){
