@@ -10,8 +10,6 @@ function trimNum(str){
         a = str.search(/0*$/)
         a -= str[a - 1] == '.'
         str = str.slice(0, a)
-    }else{
-        i = str.length
     }
     return str
 }
