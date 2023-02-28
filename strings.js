@@ -4,7 +4,7 @@ export function toLower(str){
 }
 
 export function correct(str){
-    return str.replaceAll(/\s*([.,:;])\s*|\s+/g, "$1 ")
+    return str.replaceAll(/\s*([.,!?:;])\s*|\s+/g, "$1 ")
 }
 
 export function countWords(str){
